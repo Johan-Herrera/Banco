@@ -11,9 +11,11 @@ public class TestCliente {
         String nombre="NombreDePrueba";
         ArrayList<Cuenta> producto = new ArrayList();
 
-        Cuenta cuenta=new Cuenta(10,"Credito");
+        Cuenta cuenta=new Cuenta(10,"Credito",100);
         producto.add(cuenta);
 
-        System.out.println("Id del cliente: "+id+"  Numero de cuenta: "+producto.get(0).getNumCuenta()+"  Tipo de cuenta: "+producto.get(0).getTipoCuenta());
+        System.out.println("Id del cliente: "+id+"  Numero de cuenta: "+producto.get(0).getNumCuenta()+"  Tipo de cuenta: "+producto.get(0).getTipoCuenta()
+        +"  Saldo: "+producto.get(0).getSaldoCuenta());
+
     }
 }

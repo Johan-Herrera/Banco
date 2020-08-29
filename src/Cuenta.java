@@ -2,17 +2,19 @@ public class Cuenta {
 
     int numCuenta;
     String tipoCuenta;
+    int saldoCuenta;
 
-    public Cuenta(int numCuenta, String tipoCuenta) {
+    public Cuenta(int numCuenta, String tipoCuenta,int saldoCuenta) {
         this.numCuenta = numCuenta;
         this.tipoCuenta = tipoCuenta;
+        this.saldoCuenta = saldoCuenta;
     }
 
     public void consignarCuenta (int dinero){
 
     }
 
-    public void transferirCuenta (int codigoTransferencia){
+    public void transferirCuenta (int numCuenta,int dinero){
 
     }
 
@@ -34,5 +36,13 @@ public class Cuenta {
 
     public void setTipoCuenta(String tipoCuenta) {
         this.tipoCuenta = tipoCuenta;
+    }
+
+    public int getSaldoCuenta() {
+        return saldoCuenta;
+    }
+
+    public void setSaldoCuenta(int saldoCuenta) {
+        this.saldoCuenta = saldoCuenta;
     }
 }
